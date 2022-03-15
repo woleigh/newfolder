@@ -3,7 +3,7 @@
   hosts: localhost
   become: true
   tasks:
-    - name: download apt key1
+    - name: download apt key2
       apt_key:
         url: https://packages.grafana.com/gpg.key
         state: present
