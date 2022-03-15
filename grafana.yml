@@ -1,6 +1,6 @@
 --- 
 - name: Install grafana
-  hosts: main
+  hosts: localhost
   become: true
   tasks:
     - name: download apt key
