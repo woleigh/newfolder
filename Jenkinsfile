@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('first') {
       steps {
-        sh 'ansible-playbook --syntax-check'
+        sh 'ansible-playbook grafana.yml --syntax-check'
         }
       }
     stage('second') {
