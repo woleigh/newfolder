@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('first') {
       steps {
-        sh ansible-playbook grafana.yml
+        sh 'ansible-playbook grafana.yml'
         }
       }
     stage('second') {
       steps {
-        sh ls -l
-        sh echo "We are done"
+        ls -l
+        echo "We are done"
       }
     }
   }
