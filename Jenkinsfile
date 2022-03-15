@@ -8,7 +8,7 @@ pipeline {
       }
     stage('second') {
       steps {
-        ls -l
+        sh 'ls -l'
         echo "We are done"
       }
     }
